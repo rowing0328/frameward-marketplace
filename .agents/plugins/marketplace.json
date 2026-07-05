@@ -1,7 +1,7 @@
 {
-  "name": "local-frameward",
+  "name": "frameward",
   "interface": {
-    "displayName": "Local Frameward"
+    "displayName": "Frameward"
   },
   "plugins": [
     {
