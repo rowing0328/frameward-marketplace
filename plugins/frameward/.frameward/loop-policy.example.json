@@ -1,0 +1,29 @@
+{
+  "name": "Frameward Loop",
+  "maxLoops": 3,
+  "defaultMode": "advisory",
+  "availableModes": [
+    "advisory",
+    "balanced",
+    "hybrid-strict",
+    "strict"
+  ],
+  "strictModeBlocksPreEditWhenMissing": [
+    "intent",
+    "layout",
+    "system",
+    "ratio"
+  ],
+  "strictModeBlocksStopWhenMissing": [
+    "language",
+    "quality",
+    "explanation"
+  ],
+  "astryxProviderGates": [
+    "detect_astryx",
+    "read_agent_docs",
+    "verify_component_imports",
+    "avoid_raw_divs_when_component_exists",
+    "avoid_hardcoded_values"
+  ]
+}

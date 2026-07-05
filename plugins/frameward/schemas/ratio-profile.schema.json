@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Frameward Ratio Profile",
+  "type": "object",
+  "properties": {
+    "profile": {
+      "type": "string"
+    },
+    "primaryRegion": {
+      "type": "string"
+    },
+    "supportingRegion": {
+      "type": "string"
+    },
+    "ratioGuidance": {
+      "type": "string"
+    },
+    "tokenSafeValues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

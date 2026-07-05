@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Frameward Handoff Report",
+  "type": "object",
+  "required": [
+    "whatWasAsked",
+    "interpretation",
+    "changes",
+    "plainLanguageSummary"
+  ],
+  "properties": {
+    "whatWasAsked": {
+      "type": "string"
+    },
+    "interpretation": {
+      "type": "string"
+    },
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "filesChanged": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "plainLanguageSummary": {
+      "type": "string"
+    }
+  }
+}

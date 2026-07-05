@@ -1,0 +1,20 @@
+{
+  "name": "local-frameward",
+  "interface": {
+    "displayName": "Local Frameward"
+  },
+  "plugins": [
+    {
+      "name": "frameward",
+      "source": {
+        "source": "local",
+        "path": "./plugins/frameward"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Frameward icon">
+  <rect width="512" height="512" rx="112" fill="#2F6FED"/>
+  <path d="M128 152h256v64H128zM128 244h160v48H128zM128 320h256v40H128z" fill="white" opacity="0.95"/>
+  <path d="M312 244h72v72h-72z" fill="white" opacity="0.72"/>
+</svg>

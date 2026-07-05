@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Frameward Layout Map",
+  "type": "object",
+  "required": [
+    "screenType",
+    "regions"
+  ],
+  "properties": {
+    "screenType": {
+      "type": "string"
+    },
+    "regions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "role",
+          "priority"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "priority": {
+            "enum": [
+              "primary",
+              "secondary",
+              "tertiary",
+              "persistent",
+              "contextual",
+              "optional"
+            ]
+          },
+          "behavior": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "mainThingToNotice": {
+      "type": "string"
+    },
+    "mainThingToDo": {
+      "type": "string"
+    },
+    "responsiveNotes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

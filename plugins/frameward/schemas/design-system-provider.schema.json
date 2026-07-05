@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Frameward Design System Provider State",
+  "type": "object",
+  "required": [
+    "activeProvider",
+    "mode"
+  ],
+  "properties": {
+    "activeProvider": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "native",
+        "reference",
+        "adapter",
+        "bootstrap",
+        "mcp",
+        "auto"
+      ]
+    },
+    "detectedProviders": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approvalRequired": {
+      "type": "boolean"
+    }
+  }
+}

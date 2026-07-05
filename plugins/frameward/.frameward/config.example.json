@@ -1,0 +1,29 @@
+{
+  "version": "0.1.0",
+  "enforcementMode": "advisory",
+  "maxLoops": 3,
+  "plainLanguageRequired": true,
+  "skipNonUiTasks": true,
+  "designSystem": {
+    "mode": "auto",
+    "preferredProvider": "project-native",
+    "fallbackProvider": "reference-only",
+    "allowDependencyInstall": false,
+    "allowMcp": false
+  },
+  "providers": {
+    "project-native": {
+      "enabled": true,
+      "priority": 1
+    },
+    "astryx": {
+      "enabled": false,
+      "mode": "reference",
+      "priority": 2,
+      "supportedVersions": ["0.1.x"],
+      "requireAgentDocsBeforeImplementation": true,
+      "requireExplicitInstallApproval": true,
+      "defaultTheme": "neutral"
+    }
+  }
+}

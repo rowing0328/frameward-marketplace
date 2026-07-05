@@ -1,0 +1,15 @@
+{
+  "activeProvider": "project-native",
+  "detectedProviders": [],
+  "astryx": {
+    "installed": false,
+    "agentDocsDetected": false,
+    "mcpConfigured": false,
+    "mode": "reference"
+  },
+  "notes": [
+    "Project-native design systems always take priority unless the user explicitly opts into another provider.",
+    "Astryx may be used as a reference without installing dependencies.",
+    "Astryx installation or MCP configuration requires explicit user approval."
+  ]
+}

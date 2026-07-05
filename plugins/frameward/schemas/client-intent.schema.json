@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Frameward Client Intent",
+  "type": "object",
+  "required": [
+    "originalRequest",
+    "plainLanguageInterpretation",
+    "assumptions",
+    "riskLevel"
+  ],
+  "properties": {
+    "originalRequest": {
+      "type": "string"
+    },
+    "plainLanguageInterpretation": {
+      "type": "string"
+    },
+    "likelyImprovementDirection": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "riskLevel": {
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "clarifyingQuestion": {
+      "type": "string"
+    }
+  }
+}

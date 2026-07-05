@@ -1,0 +1,22 @@
+{
+  "requiredGates": [
+    "intent",
+    "language",
+    "layout",
+    "system",
+    "ratio",
+    "implementation",
+    "quality",
+    "explanation"
+  ],
+  "qualityChecks": [
+    "mobile",
+    "keyboard",
+    "focus",
+    "empty",
+    "loading",
+    "error",
+    "important_button_visibility",
+    "plain_language_summary"
+  ]
+}

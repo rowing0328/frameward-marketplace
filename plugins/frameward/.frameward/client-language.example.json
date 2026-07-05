@@ -1,0 +1,17 @@
+{
+  "principle": "Do not require users to know UI/UX terminology.",
+  "replaceTerms": {
+    "CTA": "the most important button",
+    "conversion": "the action the user is supposed to complete",
+    "visual hierarchy": "what should be noticed first",
+    "information architecture": "how the screen content is organized",
+    "cognitive load": "how complicated the screen feels",
+    "friction": "where the user gets stuck",
+    "empty state": "what appears when there is no content yet",
+    "error recovery": "how the user can continue after something goes wrong",
+    "design token": "the project's existing color, spacing, and text rules",
+    "responsive QA": "checking that the screen works on mobile, tablet, and desktop"
+  },
+  "preferredQuestionStyle": "Offer simple choices instead of asking expert questions.",
+  "maxClarifyingQuestionsByDefault": 1
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Frameward Astryx Provider State",
+  "type": "object",
+  "properties": {
+    "installed": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "reference",
+        "adapter",
+        "bootstrap",
+        "mcp"
+      ]
+    },
+    "agentDocsDetected": {
+      "type": "boolean"
+    },
+    "mcpConfigured": {
+      "type": "boolean"
+    },
+    "approvalForInstall": {
+      "type": "boolean"
+    },
+    "approvalForMcp": {
+      "type": "boolean"
+    }
+  }
+}

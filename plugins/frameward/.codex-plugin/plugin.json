@@ -1,0 +1,53 @@
+{
+  "name": "frameward",
+  "version": "0.1.0",
+  "description": "An open-source, agent-native UI guidance framework that turns vague screen feedback into structured, tested interface improvements.",
+  "author": {
+    "name": "Frameward Contributors",
+    "url": "https://github.com/frameward/frameward"
+  },
+  "homepage": "https://github.com/frameward/frameward",
+  "repository": "https://github.com/frameward/frameward",
+  "license": "MIT",
+  "keywords": [
+    "ui",
+    "ux",
+    "design-system",
+    "codex",
+    "agent",
+    "hooks",
+    "skills",
+    "astryx",
+    "accessibility",
+    "responsive"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json",
+  "interface": {
+    "displayName": "Frameward",
+    "shortDescription": "Turn vague screen feedback into structured UI improvements.",
+    "longDescription": "Frameward helps Codex understand non-expert screen feedback, map screen purpose, follow the project’s existing UI rules, improve the interface, check quality, and explain the result in plain language. Astryx is supported as an optional provider.",
+    "developerName": "Frameward Contributors",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/frameward/frameward",
+    "privacyPolicyURL": "https://github.com/frameward/frameward/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/frameward/frameward/blob/main/TERMS.md",
+    "defaultPrompt": [
+      "Use Frameward to improve this screen while explaining changes in plain language.",
+      "Use Frameward to understand this vague screen feedback and create a safe improvement plan.",
+      "Use Frameward to audit this UI against the existing design system.",
+      "Use Frameward with the Astryx provider if this React project already uses Astryx.",
+      "Use Frameward to prepare a handoff report for the UI changes."
+    ],
+    "brandColor": "#2F6FED",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/logo.svg",
+    "screenshots": [
+      "./assets/screenshot-placeholder.svg"
+    ]
+  }
+}

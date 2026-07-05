@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Frameward QA Report",
+  "type": "object",
+  "properties": {
+    "mobile": {
+      "type": "string"
+    },
+    "tablet": {
+      "type": "string"
+    },
+    "desktop": {
+      "type": "string"
+    },
+    "keyboardFocus": {
+      "type": "string"
+    },
+    "states": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "providerChecks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "remainingRisks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
