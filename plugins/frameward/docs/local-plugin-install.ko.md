@@ -36,7 +36,7 @@ frameward-marketplace/
 
 ```json
 {
-  "name": "local-frameward",
+  "name": "frameward",
   "interface": {
     "displayName": "Local Frameward"
   },
@@ -73,22 +73,38 @@ codex plugin marketplace add /path/to/frameward-marketplace
 codex plugin marketplace list
 ```
 
-설치 가능한 플러그인 목록에 Frameward가 보이는지 확인합니다.
+Frameward marketplace의 플러그인 목록을 확인합니다.
 
 ```bash
-codex plugin list --available
+codex plugin list --marketplace frameward
 ```
 
-Frameward를 설치합니다.
+Frameward를 설치합니다. 현재 예시의 marketplace 이름은 `frameward`이므로 selector도 `frameward@frameward`를 사용합니다.
 
 ```bash
-codex plugin add frameward@local-frameward
+codex plugin add frameward@frameward
 ```
 
 설치 후 목록을 확인합니다.
 
 ```bash
 codex plugin list
+```
+
+## 기존 등록을 바꿀 때
+
+이미 같은 이름의 marketplace가 다른 경로 또는 Git URL로 등록되어 있으면 먼저 제거한 뒤 다시 등록합니다.
+
+```bash
+codex plugin marketplace remove frameward
+codex plugin marketplace add /path/to/frameward-marketplace
+codex plugin add frameward@frameward
+```
+
+예전에 `local-frameward` 이름으로 등록한 잘못된 경로가 남아 있으면 함께 제거합니다.
+
+```bash
+codex plugin marketplace remove local-frameward
 ```
 
 ## 사용 예시
@@ -119,7 +135,7 @@ Frameward를 사용하되 Astryx는 설치하거나 MCP를 켜지 마세요.
 Frameward가 설치 가능 목록에 보이지 않으면 다음을 확인합니다.
 
 - `marketplace.json`이 `.agents/plugins/marketplace.json` 위치에 있는지 확인합니다.
-- `marketplace.json`의 `name`이 설치 명령의 `@local-frameward`와 일치하는지 확인합니다.
+- `marketplace.json`의 `name`이 설치 명령의 `@frameward`와 일치하는지 확인합니다.
 - `source.path`가 실제 Frameward 플러그인 폴더를 가리키는지 확인합니다.
 - Frameward 폴더 안에 `.codex-plugin/plugin.json`이 있는지 확인합니다.
 
