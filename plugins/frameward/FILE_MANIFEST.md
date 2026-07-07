@@ -1,6 +1,6 @@
 # File Manifest
 
-Generated files: 120
+Generated files: 123
 
 - `.codex-plugin/plugin.json`
 - `.frameward/client-language.example.json`
@@ -51,6 +51,7 @@ Generated files: 120
 - `models/interaction-state-model.md`
 - `models/layout-ratio-model.md`
 - `models/layout-region-model.md`
+- `models/reference-analysis-model.md`
 - `models/responsive-region-model.md`
 - `models/ui-foundation-model.md`
 - `providers/README.md`
@@ -98,6 +99,7 @@ Generated files: 120
 - `skills/layout-region-mapping/SKILL.md`
 - `skills/plain-language-brief/SKILL.md`
 - `skills/provider-safe-implementation/SKILL.md`
+- `skills/reference-analysis/SKILL.md`
 - `skills/responsive-check/SKILL.md`
 - `skills/screen-improvement-plan/SKILL.md`
 - `skills/state-coverage-check/SKILL.md`
@@ -107,6 +109,7 @@ Generated files: 120
 - `templates/client-facing-summary.md`
 - `templates/handoff-report-template.md`
 - `templates/provider-evaluation-template.md`
+- `templates/reference-analysis-template.md`
 - `templates/responsive-checklist.md`
 - `templates/screen-improvement-template.md`
 - `templates/ui-foundation-brief.md`

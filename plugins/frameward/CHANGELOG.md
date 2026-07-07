@@ -15,6 +15,7 @@
 - Added Korean local plugin installation documentation.
 - Added Korean internal architecture documentation for early users.
 - Added new-project UI foundation docs, workflow, template, and model.
+- Added a lightweight reference-analysis skill, model, and template for safely learning from reference screens without copying brand-specific or unsupported details.
 
 ### Notes
 

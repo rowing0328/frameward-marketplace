@@ -45,7 +45,7 @@ Frameward의 기본 흐름은 다음과 같습니다.
 
 ## 주요 계층
 
-Frameward는 여섯 계층으로 나뉩니다.
+Frameward는 일곱 계층으로 나뉩니다.
 
 ### 1. 사용자 언어 계층
 
@@ -60,7 +60,21 @@ Frameward는 여섯 계층으로 나뉩니다.
 - `skills/client-intent-discovery/SKILL.md`
 - `skills/plain-language-brief/SKILL.md`
 
-### 2. 루프 게이트 계층
+### 2. 레퍼런스 분석 계층
+
+사용자가 참고 화면, 스크린샷, 사이트, Figma 메모를 제공할 때 Frameward는 이를 그대로 복제 대상으로 보지 않습니다.
+
+먼저 눈에 보이는 사실과 해석을 분리합니다. 그 다음 현재 프로젝트에 안전하게 참고할 부분, 가져오면 안 되는 브랜드 고유 요소, 출처 없는 신뢰 표현, 화면 구조 위험을 나눕니다.
+
+이 계층의 기본 원칙은 기존 프로젝트의 컴포넌트, 색상, 간격, 글자 규칙을 우선하는 것입니다. 레퍼런스는 방향을 잡기 위한 자료이며, 현재 프로젝트의 UI 규칙을 대체하지 않습니다.
+
+관련 파일:
+
+- `skills/reference-analysis/SKILL.md`
+- `models/reference-analysis-model.md`
+- `templates/reference-analysis-template.md`
+
+### 3. 루프 게이트 계층
 
 Frameward Loop는 Codex가 UI 작업을 너무 빨리 시작하지 않도록 막는 점검 순서입니다.
 
@@ -81,7 +95,7 @@ Frameward Loop는 Codex가 UI 작업을 너무 빨리 시작하지 않도록 막
 - `.frameward/gates.example.json`
 - `schemas/frameward-loop-state.schema.json`
 
-### 3. 훅 계층
+### 4. 훅 계층
 
 훅은 Codex 작업 흐름 중간에 Frameward 정책을 적용합니다.
 

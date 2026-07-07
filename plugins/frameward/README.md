@@ -6,6 +6,10 @@ It helps Codex turn vague screen feedback like “make this page better”, “m
 
 Frameward is not a UI component library. It is not an Astryx wrapper. It is a hook-guided way to help Codex improve screens without forcing users to learn design vocabulary.
 
+When a user provides a reference screen, Frameward can first separate what is safe to learn from the reference from what should not be copied. This keeps reference-informed work grounded in visible screen details while preserving the current project's own components, colors, spacing, and text rules.
+
+This reference-analysis workflow is guidance for safer adaptation, not full reference cloning.
+
 ## Who It Is For
 
 Frameward is for product teams, maintainers, designers, and developers who want Codex to handle unclear screen feedback more reliably.
